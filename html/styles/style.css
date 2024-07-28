@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root { /* variavel global para o esquema de cores  */
+    --cor-primaria: #000000; /* cor preta  */
+    --cor-secundaria: #f6f6f6; /* copr branca  */
+    --cor-terciaria: #22D4FD; /* cor azul */
+}
+
+*{ /* resetando config de margin e padding na pagina toda */
+    margin: 0;
+    padding: 0;
+}
+header{ /*<!--cabeçalho-->*/
+    display: flex;
+    justify-content: flex-end;
+    text-align:center; /*alinha o texto ao centro*/
+    font-size: 24px; /* tamanho da fonte*/
+    font-family: 'Montserrat', sans-serif; /* estilo da fonte */
+    text-decoration: none; /* tira o sublinhado */
+    color: var(--cor-secundaria); /* cor do texto */
+    padding: 24px; /* espaçamento */
+    
+    
+}
+.links_menu{ /* elemento <nav>  */
+    color: var(--cor-secundaria); /* cor do texto do menunav */
+    padding: 15px; /* espaçamento */
+    text-decoration: none; /* tira o sublinhado  */
+}
+.links_menu:hover{ /* elemento de interação do menu  */
+    color: var(--cor-primaria); /* troca a cor do textp ao passar o mouse por cima */
+}
+
+body{ /* todo conteudo visual da pagina */
+    
+    background-color: var(--cor-primaria); /* cor de fundo*/
+    height: 100vh; /* 100% do tamanho da tela */  
+    color: var(--cor-secundaria); /* cor da fonte */
+    box-sizing: border-box; /* limitar a margem*/
+}
+.destaque_titulo{ /*strong  */
+    color: var(--cor-terciaria); /* cor da fonte */
+    
+}
+.apresentacao{ /* main */
+    display: flex;
+    margin: 10% 15%; /* topo/fundo - direita/esquerda */ 
+    align-items: center; /* colunas centralizadas */
+    justify-content: space-between; /* espaço entre as colunas */
+    
+}
+.apresentacao_texto{ /* section coluna da esquerda  */
+    display: flex; /* h1 p div */
+    gap: 40px; /* espaçamento entre as tags*/
+    width: 50%; /* section ocupa 50% de largura da caixa main */
+    flex-direction: column;
+}
+
+.apresentacao_titulo { /* h1 */
+    font-size: 36px; /* Tamanho do título */
+    color: var(--cor-secundaria); /* cor do titulo */
+    font-family: 'Montserrat', sans-serif; /* estilo da fonte */
+    
+}
+.texto_conteudo_apresentacao { /* tag p */
+    color: var(--cor-secundaria); /* cor do texto */
+    font-size: 24px; /* Tamanho do texto */
+    font-family: 'Montserrat', sans-serif; /* estilo da fonte */
+
+}
+img{
+    transition: transform 0.5s; /* efeito para aumentar a imagem */
+}
+
+.apresentacao_links{ /* DIV - COLUNA ESQUERDA */
+    display: flex; /*2 caixas - botoes - tag <a> */
+    justify-content: space-between; /*espaço entre as caixas*/
+    flex-direction: column; /*direção*/
+    align-items: center;
+    gap: 32px;  /* espaçamento entre as tags*/
+}
+
+.apresentacao_links_subtitulo{
+    font-family: 'Krona One',sans-serif; /* estilo da fonte */
+    font-weight: 400; /* peso da fonte */
+    font-size: 24px; /* tamanho da fonte */
+}
+
+.apresentacao_links_botao{ /* tag a - botoes que estao na div */
+    display: flex;
+    text-align: center ; /* centraliza o texto */
+    border-radius: 8px; /* arredondamento da borda */
+
+
+    width: 378px; /* largura do botão */
+    border: 2px solid; /* borda */
+    padding: 21.5px 0; /* espaço entre o texto e borda do botão */
+    border-color: var(--cor-terciaria); /* cor da borda*/
+    gap: 16px; /* espaçamento*/
+    justify-content: center;
+    font-size: 24px; /* tamanho da fonte*/
+    font-weight: 600; /* peso da fonte*/
+    text-decoration: none ; /* tira o sublinhado  */
+    color:var(--cor-secundaria); /* cor do texto */
+    font-family: 'Montserrat',sans-serif; /* estilo da fonte*/
+    transition: transform 0.5s; /* efeito para aumentar o botão*/
+}
+.apresentacao_links_botao:hover{ /* elemento de interação do botão  */
+    color: var(--cor-primaria);
+    transform: scale(1.1);
+    
+}
+img:hover{ /* elemento de interação da imagem  */
+    transform: scale(1.1);
+}
+strong{ /* elemento pra deixa a cor do texto mais forte  */
+    color: var(--cor-terciaria); /* cor do texto  */
+
+}
+footer{ /* rodapé  */
+    background-color: var(--cor-terciaria); /* cor do fundo */
+    color: var(--cor-secundaria); /* cor do texto */
+    text-align: center; /* alinha o texto aoo centro */
+    font-family: 'Montserrat', sans-serif; /* estilo da fonte  */
+    font-weight: 400; /*peso da fonte  */
+    font-size: 24px; /* tamanho da fonte  */
+    padding: 24px; /* espaçamento  */
+}
+
